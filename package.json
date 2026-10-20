@@ -1,0 +1,11 @@
+{
+  "name": "csv-upload",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "gen": "node scripts/generate-csv.js",
+    "start": "node --max-old-space-size=128 server.js",
+    "upload": "node scripts/upload.js"
+  }
+}
