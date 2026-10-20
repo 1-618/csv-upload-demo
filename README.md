@@ -34,17 +34,33 @@ and the upload reports `ECONNRESET`.
 
 ## Get Claude Code to ask the question
 
-Open Claude Code in this folder, paste the crash output, and ask for options before any change is made. For example:
+The repo ships a project skill, `.claude/skills/oom-question/SKILL.md`, that scripts the exact question used in the article. Open Claude Code in this folder and run:
 
 ```
-The /upload endpoint crashes with "JavaScript heap out of memory" when I
-upload transactions.csv (output below). Don't change anything yet. Ask me
-which fix I want, with your recommendation.
-
-<paste the crash output here>
+/oom-question
 ```
 
-Claude Code should come back with a multiple-choice question, with its pick marked "(Recommended)". The exact wording and options depend on the session, so it may take a run or two to get a clean screenshot.
+Claude Code reads `server.js`, then asks:
+
+```
+How should we fix the out-of-memory crash in the upload handler?
+
+1. Raise the heap limit with --max-old-space-size (Recommended)
+2. Stream the file instead of reading it all into memory
+3. Move the CSV parsing into a worker thread
+```
+
+If `/oom-question` isn't recognised, restart Claude Code from inside this folder, or paste the body of `SKILL.md` (everything below the `---` lines) as a normal message instead.
+
+The question's wording, order and "(Recommended)" pick are fixed by the skill, not chosen by Claude. Each option also shows a one-line description under its label, and the picker adds its own option for typing a custom answer.
+
+For an unscripted run, skip the command, paste the crash output, and ask Claude Code which fix it would pick before it changes anything. Its options and recommendation will vary between sessions.
+
+## Editor theme
+
+`.vscode/settings.json` sets this folder to Bearded Theme Arc Blueberry, with the backgrounds, accent and integrated-terminal colours tuned to the article's palette (indigo `#1f2147`, mint `#5fce98`). VS Code offers to install the theme from `.vscode/extensions.json` the first time the folder is opened. The settings only apply to this folder, so your global theme is untouched.
+
+For Claude Code's UI to pick up the terminal palette, run `/theme` in Claude Code and choose the dark "ANSI colors only" option, if your version has it.
 
 ## What each fix actually does
 

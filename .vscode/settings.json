@@ -1,0 +1,45 @@
+{
+  "workbench.colorTheme": "Bearded Theme Arc Blueberry",
+  "workbench.colorCustomizations": {
+    "[Bearded Theme Arc Blueberry]": {
+      "editor.background": "#1f2147",
+      "editorGutter.background": "#1f2147",
+      "sideBar.background": "#171936",
+      "activityBar.background": "#0e1022",
+      "titleBar.activeBackground": "#0e1022",
+      "statusBar.background": "#0e1022",
+      "panel.background": "#1f2147",
+      "tab.activeBackground": "#1f2147",
+      "tab.inactiveBackground": "#171936",
+      "tab.activeBorder": "#5fce98",
+      "focusBorder": "#5fce98",
+      "editorCursor.foreground": "#5fce98",
+      "button.background": "#5fce98",
+      "button.foreground": "#0e1022",
+      "activityBarBadge.background": "#5fce98",
+      "progressBar.background": "#5fce98",
+      "textLink.foreground": "#5fce98",
+
+      "terminal.background": "#1f2147",
+      "terminal.foreground": "#f4f4fb",
+      "terminalCursor.foreground": "#5fce98",
+      "terminal.selectionBackground": "#3a3d7a",
+      "terminal.ansiBlack": "#0e1022",
+      "terminal.ansiBrightBlack": "#8a8fb8",
+      "terminal.ansiWhite": "#d7d4ed",
+      "terminal.ansiBrightWhite": "#ffffff",
+      "terminal.ansiGreen": "#5fce98",
+      "terminal.ansiBrightGreen": "#7ee0b0",
+      "terminal.ansiBlue": "#8eb0e6",
+      "terminal.ansiBrightBlue": "#a9c4f0",
+      "terminal.ansiCyan": "#6fd3d0",
+      "terminal.ansiBrightCyan": "#94e4e1",
+      "terminal.ansiMagenta": "#b78aff",
+      "terminal.ansiBrightMagenta": "#cdaaff",
+      "terminal.ansiRed": "#ff738a",
+      "terminal.ansiBrightRed": "#ff97a8",
+      "terminal.ansiYellow": "#eacd61",
+      "terminal.ansiBrightYellow": "#f2dc8a"
+    }
+  }
+}
